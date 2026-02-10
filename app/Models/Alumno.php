@@ -18,6 +18,6 @@ class Alumno extends Model
     }
 
     public function curso(){
-        return $this->belongsTo(Curso::class, 'curso_id');
+        return $this->belongsToMany(Curso::class, 'curso_id');
     }
 }
